@@ -1,0 +1,1 @@
+LEARNING_RATE = .5

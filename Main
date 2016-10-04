@@ -1,0 +1,8 @@
+import NeuralNetwork
+
+network = NeuralNetwork.NeuralNetwork(2, 1, 2, 2)
+network.create_network()
+for i in range(0, 10000):
+    output = network.calculate_network([1, 2])
+    print("Generation", i, output)
+    prop = network.back_propagation(.5)
